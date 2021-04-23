@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619207350510
+    "lastModifiedOn": 1619208683602
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,37 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Datetime_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Consommation",
+        "type": "double"
+      },
+      {
+        "name": "trivial_identity_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "seasonal_naive_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "simplefeedforward_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "row_origin",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
