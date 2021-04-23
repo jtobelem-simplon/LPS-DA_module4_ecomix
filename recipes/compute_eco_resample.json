@@ -3,7 +3,18 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "time_step": 15,
+      "time_unit": "minutes",
+      "interpolation_method": "linear",
+      "constant_value": 0,
+      "extrapolation_method": "clip",
+      "clip_start": 0,
+      "clip_end": 0,
+      "shift": 0,
+      "advanced_activated": false,
+      "datetime_column": "Datetime_parsed"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +48,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619208587636
+    "lastModifiedOn": 1619208624127
   },
   "creationTag": {
     "versionNumber": 0,
