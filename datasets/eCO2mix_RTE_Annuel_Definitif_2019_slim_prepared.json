@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619189335011
+    "lastModifiedOn": 1619197989860
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,147 +87,11 @@
   "schema": {
     "columns": [
       {
-        "name": "Périmètre",
-        "type": "string"
-      },
-      {
-        "name": "Nature",
-        "type": "string"
-      },
-      {
-        "name": "Heures",
-        "type": "string"
-      },
-      {
         "name": "Datetime_parsed",
         "type": "date"
       },
       {
         "name": "Consommation",
-        "type": "bigint"
-      },
-      {
-        "name": "Prévision J-1",
-        "type": "bigint"
-      },
-      {
-        "name": "Prévision J",
-        "type": "bigint"
-      },
-      {
-        "name": "Fioul",
-        "type": "bigint"
-      },
-      {
-        "name": "Charbon",
-        "type": "bigint"
-      },
-      {
-        "name": "Gaz",
-        "type": "bigint"
-      },
-      {
-        "name": "Nucléaire",
-        "type": "bigint"
-      },
-      {
-        "name": "Eolien",
-        "type": "bigint"
-      },
-      {
-        "name": "Solaire",
-        "type": "bigint"
-      },
-      {
-        "name": "Hydraulique",
-        "type": "bigint"
-      },
-      {
-        "name": "Pompage",
-        "type": "bigint"
-      },
-      {
-        "name": "Bioénergies",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. physiques",
-        "type": "bigint"
-      },
-      {
-        "name": "Taux de Co2",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. comm. Angleterre",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. comm. Espagne",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. comm. Italie",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. comm. Suisse",
-        "type": "bigint"
-      },
-      {
-        "name": "Ech. comm. Allemagne-Belgique",
-        "type": "bigint"
-      },
-      {
-        "name": "Fioul - TAC",
-        "type": "bigint"
-      },
-      {
-        "name": "Fioul - Cogén.",
-        "type": "bigint"
-      },
-      {
-        "name": "Fioul - Autres",
-        "type": "bigint"
-      },
-      {
-        "name": "Gaz - TAC",
-        "type": "bigint"
-      },
-      {
-        "name": "Gaz - Cogén.",
-        "type": "bigint"
-      },
-      {
-        "name": "Gaz - CCG",
-        "type": "bigint"
-      },
-      {
-        "name": "Gaz - Autres",
-        "type": "bigint"
-      },
-      {
-        "name": "Hydraulique - Fil de l?eau + éclusée",
-        "type": "bigint"
-      },
-      {
-        "name": "Hydraulique - Lacs",
-        "type": "bigint"
-      },
-      {
-        "name": "Hydraulique - STEP turbinage",
-        "type": "bigint"
-      },
-      {
-        "name": "Bioénergies - Déchets",
-        "type": "bigint"
-      },
-      {
-        "name": "Bioénergies - Biomasse",
-        "type": "bigint"
-      },
-      {
-        "name": "Bioénergies - Biogaz",
         "type": "bigint"
       }
     ],
