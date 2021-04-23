@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619189236295
+    "lastModifiedOn": 1619189335011
   },
   "creationTag": {
     "versionNumber": 0,
@@ -95,16 +95,12 @@
         "type": "string"
       },
       {
-        "name": "Date",
-        "type": "string"
-      },
-      {
         "name": "Heures",
         "type": "string"
       },
       {
-        "name": "Datetime",
-        "type": "string"
+        "name": "Datetime_parsed",
+        "type": "date"
       },
       {
         "name": "Consommation",
