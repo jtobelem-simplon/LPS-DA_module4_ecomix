@@ -50,15 +50,63 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "lines",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Avg. of Consommation by Date",
         "userEditedName": false,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "Date",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "DASHED"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "Consommation",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -76,9 +124,10 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
-        "includeZero": true,
+        "includeZero": false,
         "smoothing": true,
         "showLegend": true,
         "showXAxis": false,
@@ -131,9 +180,10 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABzElEQVRoQ2NkGGGAkd7+lS/f0vew06eI3vbC7KO7hwfKo4PGw9KVe4Sftru8pVdAjMYwvUKa2vbIl21e/bDLN5SQuTSLYfnyLXMedvqkIDkAZNd/Qg6ihbxK5TbRO+1er0FmU93DCuVbGh90+tSDDJer2Dr9UYd3Ji08Qa6ZVPcwOQ6hZ8E1KDxMSiDJlm5TftztdZcUPchqh5yHyfUoVephubItqx51+YRR6ghq6pcp3Wb/pNvrIC4zqRrD8mVbkh92+cylpgeobRZVPUxtx1HDPOWKHSp3OzzuUCVJU8NBhMzQqNwjfIOKTc9BE8OyVet0HrcFXSEUAJTKE/SwQv16gQeNgR/wWaRYvFX+fq/3Q0odQ039shXbwh93eK1EN5Ogh4l1BHLzjVg9A6GOah4eCMeTY+eoh5FDTaF8i/uDTp+d5ITkYNUzqGJYrmKL4KMOn/e0DKxB5WFaenTINDyoHQijMUztECXVPJnSzaosTAyBDzp9u0jVS4x6nDGsULXV4EGb9wViDBlKakaT9FCKLXLcOhrD5ITaUNIzGsOg2JKuXCf8tD2IbhNc9EwhozFMz9AeCLtGY3ggQp2edo7GMD1DeyDsGnExDABBjmEpNWxkOAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
