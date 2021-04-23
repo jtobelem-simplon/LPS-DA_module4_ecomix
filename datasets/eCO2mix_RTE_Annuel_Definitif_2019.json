@@ -1,0 +1,317 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "windows-1252",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 36,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1619194777040
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1619194777040
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "fa91e8ef58eec8b5dc5dbc5e9fa11105c9db1e6de60e909c31ecd9779e7d1fdb",
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Périmètre",
+        "type": "string"
+      },
+      {
+        "name": "Nature",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Heures",
+        "type": "string"
+      },
+      {
+        "name": "Consommation",
+        "type": "string"
+      },
+      {
+        "name": "Prévision J-1",
+        "type": "string"
+      },
+      {
+        "name": "Prévision J",
+        "type": "string"
+      },
+      {
+        "name": "Fioul",
+        "type": "string"
+      },
+      {
+        "name": "Charbon",
+        "type": "string"
+      },
+      {
+        "name": "Gaz",
+        "type": "string"
+      },
+      {
+        "name": "Nucléaire",
+        "type": "string"
+      },
+      {
+        "name": "Eolien",
+        "type": "string"
+      },
+      {
+        "name": "Solaire",
+        "type": "string"
+      },
+      {
+        "name": "Hydraulique",
+        "type": "string"
+      },
+      {
+        "name": "Pompage",
+        "type": "string"
+      },
+      {
+        "name": "Bioénergies",
+        "type": "string"
+      },
+      {
+        "name": "Ech. physiques",
+        "type": "string"
+      },
+      {
+        "name": "Taux de Co2",
+        "type": "string"
+      },
+      {
+        "name": "Ech. comm. Angleterre",
+        "type": "string"
+      },
+      {
+        "name": "Ech. comm. Espagne",
+        "type": "string"
+      },
+      {
+        "name": "Ech. comm. Italie",
+        "type": "string"
+      },
+      {
+        "name": "Ech. comm. Suisse",
+        "type": "string"
+      },
+      {
+        "name": "Ech. comm. Allemagne-Belgique",
+        "type": "string"
+      },
+      {
+        "name": "Fioul - TAC",
+        "type": "string"
+      },
+      {
+        "name": "Fioul - Cogén.",
+        "type": "string"
+      },
+      {
+        "name": "Fioul - Autres",
+        "type": "string"
+      },
+      {
+        "name": "Gaz - TAC",
+        "type": "string"
+      },
+      {
+        "name": "Gaz - Cogén.",
+        "type": "string"
+      },
+      {
+        "name": "Gaz - CCG",
+        "type": "string"
+      },
+      {
+        "name": "Gaz - Autres",
+        "type": "string"
+      },
+      {
+        "name": "Hydraulique - Fil de l?eau + éclusée",
+        "type": "string"
+      },
+      {
+        "name": "Hydraulique - Lacs",
+        "type": "string"
+      },
+      {
+        "name": "Hydraulique - STEP turbinage",
+        "type": "string"
+      },
+      {
+        "name": "Bioénergies - Déchets",
+        "type": "string"
+      },
+      {
+        "name": "Bioénergies - Biomasse",
+        "type": "string"
+      },
+      {
+        "name": "Bioénergies - Biogaz",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
