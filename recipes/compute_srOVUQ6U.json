@@ -86,7 +86,7 @@
     "input_dataset": {
       "items": [
         {
-          "ref": "eCO2mix_RTE_Annuel_Definitif_2019_slim_prepared",
+          "ref": "eco_resample",
           "deps": []
         }
       ]
@@ -120,11 +120,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619207377736
+    "lastModifiedOn": 1619208649062
   },
   "creationTag": {
     "versionNumber": 0,
