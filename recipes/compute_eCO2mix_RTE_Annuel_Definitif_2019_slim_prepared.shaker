@@ -26,8 +26,27 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "Datetime",
+        "columns": [
+          "Date",
+          "Heures"
+        ],
+        "join": " "
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +54,46 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Prévision J-1": 113,
+    "Gaz": 100,
+    "Hydraulique": 100,
+    "Fioul - Cogén.": 120,
+    "Fioul": 100,
+    "Ech. comm. Allemagne-Belgique": 233,
+    "Gaz - TAC": 100,
+    "Taux de Co2": 100,
+    "Heures": 100,
+    "Charbon": 100,
+    "Ech. comm. Suisse": 143,
+    "Bioénergies - Biomasse": 180,
+    "Bioénergies - Déchets": 173,
+    "Ech. physiques": 120,
+    "Ech. comm. Italie": 143,
+    "Gaz - Cogén.": 105,
+    "Hydraulique - Fil de l?eau + éclusée": 285,
+    "Gaz - Autres": 105,
+    "Datetime": 127,
+    "Nature": 148,
+    "Solaire": 100,
+    "Fioul - TAC": 100,
+    "Date_parsed": 183,
+    "Ech. comm. Angleterre": 173,
+    "Bioénergies - Biogaz": 165,
+    "Hydraulique - Lacs": 150,
+    "Nucléaire": 100,
+    "Pompage": 100,
+    "Périmètre": 113,
+    "Date": 100,
+    "Ech. comm. Espagne": 150,
+    "Fioul - Autres": 120,
+    "Bioénergies": 100,
+    "Consommation": 105,
+    "Hydraulique - STEP turbinage": 225,
+    "Eolien": 100,
+    "Gaz - CCG": 100,
+    "Prévision J": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
