@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619208683530
+    "lastModifiedOn": 1619208831640
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,13 +88,11 @@
     "columns": [
       {
         "name": "target_column",
-        "type": "string",
-        "comment": "Aggregated and per-time-series metrics"
+        "type": "string"
       },
       {
         "name": "model",
-        "type": "string",
-        "comment": "Model name"
+        "type": "string"
       },
       {
         "name": "MSE",
@@ -130,18 +128,15 @@
       },
       {
         "name": "run_time",
-        "type": "double",
-        "comment": "Time elapsed during model training and evaluation (in seconds)"
+        "type": "double"
       },
       {
         "name": "model_params",
-        "type": "string",
-        "comment": "Parameters used for training"
+        "type": "string"
       },
       {
         "name": "training_session",
-        "type": "string",
-        "comment": "Timestamp of training session"
+        "type": "string"
       }
     ],
     "userModified": false
