@@ -1,0 +1,197 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "lines",
+        "variant": "normal",
+        "name": "Avg. of Consommation by Datetime_parsed",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "Datetime_parsed",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "AVERAGE"
+            },
+            "dateParams": {
+              "mode": "AUTOMATIC"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "Consommation",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": false,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAFAElEQVRoQ+2YfWgcRRTAd2PU4LeI2K/b3TTFQrAg+FdF0KBoczOXprQUGhBb1BSVYE16O3tpNY22vZ09k1aClVRFRUlBIk1zM5cElCgF/UsQlELFNDuTthaKKKQmGlJO9nTJ5rJ3s2eSu4Pm/jpu3nvzfu9rZk6WbrCPfIPxSivAxcx4NSIt4xj2FGNPFdG3GAavlzTDa1oHQpe7GyeKAezuUVLgYoIuK7BikHu5CX/PBlJjyc0sHvmuFKD/C1jrGK2yO+v+EjmsITpoY9CwANggbzITvqHqZIhZsN5Z14whzTbrbZHNpVovqKRVRJsYBn3VKBkZx5FkLidWxVL3X4mHryo6OcYt+JorpyLazTBoXdOcvO3yyciU83vIoLsnTPDxUgCpBt3OTPBFPluBgWs7Ru+4Nv3nQW5BQ0W0n2GwQ+Sk2j68mh3d8qsrp8VSj9vx8DdePQXR4xyDfSJbfusqSr7CcORdT0CFfgUGzpRflO6yE+DU+hh98EIc/Cxysrbjp1smp3hoIhEec2RrDoyExo48k5nKqk7eZhbcn6vfF7SDnrQqZOmst7Ky20FBpIULjrmCgGtaB0Jj/x0jKiKjDMM6EbQLJpILsq4i8inD8FnvLFEM8gg34feO/trYl/ddij/125KUdLaRav3MxnFr63mRo4qe2sGtcL9ILsi6huirNgbvqAbtYyZocnQUgzRzE54Mou/IFJRhkVHVIG3MhF0iOd9+9DmyVEROSJL0GcPwW0fHbSXv8aYapIeZsCXonksKrBl0l22CU5keDVjyXkfX6ql1l6zwxbkhRB6VZGmzG0TvdJ+TSTYxHOnz2tmon7nzvLV10i8IQuAgoz4D2D68ejZdOSPqoXyZUAz6HjfBS67Mho7UXTPTaYNboD1oBjNlrieflOWKNoZBOFtPCKwgMsAxbPTbcD2im67L8tPMDHcpiBzjeO7MzeWgX5Zc2WpEd45j8Pm8rOcYRAoiwxzDLb7tgWh/VXp2j1+WhcDrEN10EYMf/QwriI7IknSWYXDYgb+QQ86rm+/BkH1u58vqhpbUrb/0hP/2BTYGtzOzIXMB0aJ0lZ0AV1y5vMCaQXfbWbcgbd/pe+zj2/5wDDywf+T2yptvqiqkjFWUqmc4POR1VNOJaVvQKKRsg8o65c2tyFeBgP0GjxalD9sJ8MM8hwu4D6s6OcAseMSrr6DUixyH3w8C4VxmznU+NDNPtmO0Uuqsm81R3q0Mg+5AwBqie20Mer2GVJ30MGv+MaAg+hHHYI87vLzXyWwnVIO+wEzwwbyAeapGBO03gTWDHrJNcChH28VlKX03w/BlZ13YwyIHMn1iJJ+wzcjXznfvzcfVVaIU8gQgQWyJZDSDNNtZF41cNywVOcdaxbR8PZ12qzIQsBpNHmSJyGGRM86636Qt9EKioJReIaUf831iItrFMGjL5Yu3DTWd9NoW3OuVDQQciqZq3AeACFrRSS/P2kSks6DsERmdmpyKXD2x81qmanTyHLfgJ/9WED3KzWDnsl+15QRWEB3kPo94kfOFBEdky113X2lB5fPJ5QZuG6jlXY3nlmKTcrIRqKTLyeHF+uILHNJJw4QFBxdrvBz1fYEX87dLOUIKp7RmnNZsc1vR/kksZpDKrofVGHmexeGHyxWEsgNeLlDX7gqw34NhuaNeTPsrGS5mtEux10qGSxH1Yu65kuFiRrsUe/0DP5coR13kujUAAAAASUVORK5CYII\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}
