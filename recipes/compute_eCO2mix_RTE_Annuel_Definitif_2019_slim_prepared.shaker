@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnsConcat",
@@ -43,6 +43,40 @@
           "Heures"
         ],
         "join": " "
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Datetime_parsed",
+        "formats": [
+          "yyyy-MM-dd HH:mm"
+        ],
+        "columns": [
+          "Datetime"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Date",
+          "Datetime"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
@@ -79,6 +113,7 @@
     "Fioul - TAC": 100,
     "Date_parsed": 183,
     "Ech. comm. Angleterre": 173,
+    "Datetime_parsed": 183,
     "Bioénergies - Biogaz": 165,
     "Hydraulique - Lacs": 150,
     "Nucléaire": 100,
