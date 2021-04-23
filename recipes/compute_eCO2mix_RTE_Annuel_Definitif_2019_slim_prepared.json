@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "eCO2mix_RTE_Annuel_Definitif_2019_slim",
+          "ref": "eCO2mix_RTE_Annuel_Definitif_2019",
           "deps": []
         }
       ]
@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619189335490
+    "lastModifiedOn": 1619194805858
   },
   "creationTag": {
     "versionNumber": 0,
