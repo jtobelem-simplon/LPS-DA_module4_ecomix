@@ -63,7 +63,9 @@
       "evaluation_only": false,
       "use_gpu": false,
       "gpu_location": "local_gpu",
-      "target_columns": [],
+      "target_columns": [
+        "Consommation"
+      ],
       "timeseries_identifiers": [],
       "external_feature_columns": [],
       "gpu_devices": [],
@@ -118,11 +120,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619296175813
+    "lastModifiedOn": 1619296208982
   },
   "creationTag": {
     "versionNumber": 0,
