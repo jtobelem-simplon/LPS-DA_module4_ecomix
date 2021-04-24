@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619297579764
+    "lastModifiedOn": 1619297580198
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,31 +96,38 @@
       },
       {
         "name": "trivial_identity_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using trivial_identity model"
       },
       {
         "name": "seasonal_naive_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using seasonal_naive model"
       },
       {
         "name": "simplefeedforward_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using simplefeedforward model"
       },
       {
         "name": "deepar_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using deepar model"
       },
       {
         "name": "transformer_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median forecasts of [1] using transformer model"
       },
       {
         "name": "row_origin",
-        "type": "string"
+        "type": "string",
+        "comment": "Row origin"
       },
       {
         "name": "training_session",
-        "type": "string"
+        "type": "string",
+        "comment": "Timestamp of training session"
       }
     ],
     "userModified": false
