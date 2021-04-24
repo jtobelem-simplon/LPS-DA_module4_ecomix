@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619296493413
+    "lastModifiedOn": 1619296494522
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,27 +96,33 @@
       },
       {
         "name": "forecast_lower_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Lower bound of the 95% forecasts confidence interval."
       },
       {
         "name": "forecast_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Median of probabilistic forecasts"
       },
       {
         "name": "forecast_upper_Consommation",
-        "type": "float"
+        "type": "float",
+        "comment": "Upper bound of the 95% forecasts confidence interval."
       },
       {
         "name": "row_origin",
-        "type": "string"
+        "type": "string",
+        "comment": "Row origin"
       },
       {
         "name": "training_session",
-        "type": "string"
+        "type": "string",
+        "comment": "Timestamp of training session"
       },
       {
         "name": "model",
-        "type": "string"
+        "type": "string",
+        "comment": "Model name"
       }
     ],
     "userModified": false
