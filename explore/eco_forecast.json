@@ -1,0 +1,233 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "def": {
+        "type": "lines",
+        "variant": "normal",
+        "name": "Avg. of Consommation by Datetime_parsed and row_origin",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "Datetime_parsed",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "AVERAGE"
+            },
+            "dateParams": {
+              "mode": "AUTOMATIC"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "row_origin",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Consommation, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Consommation, descending"
+            }
+          }
+        ],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "Consommation",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "dku_dss_next",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADxElEQVRoQ+2WX2gURxzHZ25tWhFDawQfGlGQXAuhRZrIebt7s5umPth/tKUnRaTnmyAa4u3cJQ1IkpdEc7vRXlW0TxWENsH6ILV50tud270zVVvBP5iIPvinVKkoTdu0udytbORi7m49krBJBrLzNMzM/ub7+X1/M7MQLLIGFxkvoBJYviiuxPXqn3Zm9Ojo/ShPfp6tUdQAy4YQx5zWFOwPMr7XHyiYI83FUD3Gu+s8Zm5TFmROt/DG77OBpgZY0dBqSSB3LYgeQ1wf5dTLxUBKSvzQzJk1AJr/YI58m5/v1cVQmFePTycBVAB3p8W1K14aub+j/lKmnGgl2egFTGZZLgffi/BabDqABWtODYWoAJbTooz9Kp4xwCw+oAPYEHZjTvsmf46nw3HwQsMbzRsSQyVlb4jbJU79riTGqWEMPvPKCwLcOyjWh33qRUtUr95QC8zMaDig37YDlQ0kYY4oxXNyGoWwn5ScWzklJHI582iUJ3128RYEeKoQOS2GsN/+wtmvc8uXm3DJzoD+uFh812BjVZvv7KOp4/39QeZe9aO6MHvuF2s8ft5X2fTHiWrwSc31/Lp5AVYGG72S7+ywrYMp4RhmtR3Fc/1XgxV3njzoxDz5ajolbq1RdKFL4rU2qy+n0CHMkl3gx+G9IMscB1vW3bHG5wQ4pqOtwAPXRFit23KiYjyz3bYsDYQwR4gdUDwhVo8x2UqMkpPulAOXDXQCc2Tb5BoTQACBCU7eeBswnlrwqff7GQEfSfKv/ct4vsQs+bp445ghNJmAORPlzt2ayHRaOCP5tQ+sfvvVYEXlXw87JPZZ5he6FTh8IB14Z48/+auiixtNaGYxp12wBO7TG2pb+cS1vFjZCHyOueRJWRc2Y14bKLkpU4iVWJLKjytJ3utZCkcy/zOr7H4o5jMJBcBykq/DAf3SszMgnMas9rHVjxHxiwhSf3gOLOyE2dxQdgl8M8qSw8WC2xPiK50N6n/58fjNzS+PPRz9CEKzRmK17vkELN6rANi6FVt4Y2TC1RR6q5UlV+zExXS0BUK41jNuDoSFwjVTY0z99sBv4qvjf4P1kYCqUgNcUpoveMRjhuD3QFglsepP1vmNcFp84uwaqMOEMIBZrXEhocrtXfaWlg100ASwL8Jp6cly1lEI86UPPq2AZUvaTrSso+6ZvIW0g8/JO0wztAtMsztOaHMddiKLNMdwHabZHSe0uQ47kUWaY7gO0+yOE9pch53IIs0xXIdpdscJba7DTmSR5hiuwzS744Q212EnskhzjKduslAe/r3C7gAAAABJRU5ErkJggg\u003d\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    }
+  ]
+}
