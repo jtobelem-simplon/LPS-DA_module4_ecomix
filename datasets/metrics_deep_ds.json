@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619296139115
+    "lastModifiedOn": 1619297579567
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,61 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "target_column",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      },
+      {
+        "name": "MSE",
+        "type": "double"
+      },
+      {
+        "name": "MASE",
+        "type": "double"
+      },
+      {
+        "name": "MAPE",
+        "type": "double"
+      },
+      {
+        "name": "sMAPE",
+        "type": "double"
+      },
+      {
+        "name": "MSIS",
+        "type": "double"
+      },
+      {
+        "name": "RMSE",
+        "type": "double"
+      },
+      {
+        "name": "ND",
+        "type": "double"
+      },
+      {
+        "name": "mean_wQuantileLoss",
+        "type": "double"
+      },
+      {
+        "name": "run_time",
+        "type": "double"
+      },
+      {
+        "name": "model_params",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
