@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619377544568
+    "lastModifiedOn": 1619377584942
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,41 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Datetime_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Consommation",
+        "type": "double"
+      },
+      {
+        "name": "forecast_lower_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "forecast_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "forecast_upper_Consommation",
+        "type": "float"
+      },
+      {
+        "name": "row_origin",
+        "type": "string"
+      },
+      {
+        "name": "training_session",
+        "type": "string"
+      },
+      {
+        "name": "model",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
