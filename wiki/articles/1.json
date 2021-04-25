@@ -1,13 +1,25 @@
 {
   "name": "Forecasting consommation",
   "layout": "WIKI_ARTICLE",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "DN8mC4ZHuXib",
+      "details": {
+        "objectDisplayName": "Capture dâÃ©cran du 2021-04-25 21-10-50.png",
+        "size": 80065,
+        "mimeType": "image/png"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1619377898188
+    }
+  ],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619377881501
+    "lastModifiedOn": 1619377898188
   },
   "creationTag": {
     "versionNumber": 0,
