@@ -3,7 +3,15 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "model_selection_mode": "auto",
+      "performance_metric": "MASE",
+      "prediction_length": -1,
+      "confidence_interval": 95,
+      "include_history": true,
+      "sampling_method": "last_records",
+      "number_records": 10000
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +45,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1619377546239
+    "lastModifiedOn": 1619377574332
   },
   "creationTag": {
     "versionNumber": 0,
